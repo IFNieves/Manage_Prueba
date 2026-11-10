@@ -1,0 +1,407 @@
+Israel Figueroa Nieves
+Curso de Lógica de Programación
+Profesora Milagros Donato Cintrón
+Lab2 Modulo3
+Seudocódigos (1 al 19) 
+
+1) 
+START
+
+Declarations
+    num : num
+
+Output "Inserte su numero entero: "
+Input num
+
+If num < 0 Then
+    Output "El numero " + num + " es negativo."
+Else
+    Output "El numero " + num + " es positivo."
+End If
+
+STOP
+
+2)
+START
+
+Declarations
+    nota : num
+
+Output "Inserte su nota: "
+Input nota
+
+If nota >= 90 OR nota = 100 
+    Output "Su calificación es: A"
+Else If nota >= 80 OR nota = 89 
+    Output "Su calificación es: B"
+Else If nota >= 70 OR nota = 79 
+    Output "Su calificación es: C"
+Else If nota >= 60 OR nota = 69 
+    Output "Su calificación es: D"
+Else
+    Output "Su calificación es: F"
+End If
+
+STOP
+
+3)
+START
+
+Declarations
+    num1 : num
+    num2 : num
+    operacion : num
+    suma : num
+    resta : num
+    multi : num
+    div : num
+
+Output "Inserte dos numeros: "
+Input num1
+Input num2
+
+Output "Elija la operacion que desea (1=Suma, 2=Resta, 3=Multiplicación, 4=División): "
+Input operacion
+
+suma = num1 + num2
+resta = num1 - num2
+multi = num1 * num2
+div = num1 / num2
+
+If operacion = 1 
+    Output "Su resultado es: " + suma
+Else If operacion = 2 
+    Output "Su resultado es: " + resta
+Else If operacion = 3 
+    Output "Su resultado es: " + multi
+Else If operacion = 4 
+    Output "Su resultado es: " + div
+Else
+    Output "Error, su numero no es aceptable"
+End If
+
+STOP
+
+4)
+START
+
+Declarations
+    edad : num
+
+Output "Inserte su edad: "
+Input edad
+
+If edad < 12 
+    Output "El costo de entrada es: $5"
+Else If edad = 12 OR edad <= 59 
+    Output "El costo de entrada es: $8"
+Else
+    Output "El costo de entrada es: $6"
+End If
+
+STOP
+
+5)
+START
+
+Declarations
+    x : num
+
+Output "Inserte la cantidad de años de servicio: "
+Input x
+
+If x > 5 
+    Output "Recibe un bono de $1,000."
+Else If x >= 2 OR x = 5 
+    Output "Recibe un bono de $500."
+Else
+    Output "No recibe un bono."
+End If
+
+STOP
+
+6)
+START
+
+Declarations
+    name : string
+    access : string
+    access2 : string
+
+access = "Admin"
+access2 = "admin"
+
+Output "Ingrese su nombre de usuario: "
+Input name
+
+If name = access OR name = access2 
+    Output "Acceso permitido."
+Else
+    Output "Acceso denegado."
+End If
+
+STOP
+
+7)
+START
+
+Declarations
+    password : string
+    access : string
+
+access = "Java123"
+
+Output "Ingrese su contraseña: "
+Input password
+
+If password = access 
+    Output "Acceso permitido."
+Else
+    Output "Acceso denegado."
+End If
+
+STOP
+
+8)
+START
+
+Declarations
+    num : num
+
+Output "Introduzca el numero: "
+Input num
+
+If num > 0 
+    Output num + " es positivo."
+Else If num < 0 
+    Output num + " es negativo."
+Else
+    Output "El numero es cero"
+End If
+
+STOP
+
+9)
+START
+
+Declarations
+    edad : num
+
+Output "Ingrese su edad: "
+Input edad
+
+If edad >= 65 
+    Output "Si aplica para descuento"
+Else
+    Output "No aplica para descuento"
+End If
+
+STOP
+
+10)
+START
+
+Declarations
+    num : num
+
+Output "Inserte el numero: "
+Input num
+
+If num MOD 5 = 0 
+    Output "El numero " + num + " es multiplo de 5"
+Else
+    Output "El numero " + num + " no es multiplo de 5"
+End If
+
+STOP
+
+11)
+START
+
+Declarations
+    color : string
+    verde : string
+    amarillo : string
+    rojo : string
+
+verde = "Verde"
+amarillo = "Amarillo"
+rojo = "Rojo"
+
+Output "Inserte el color del semaforo: "
+Input color
+
+If color = verde 
+    Output "Puede avanzar"
+Else If color = amarillo 
+    Output "Continue con precaución"
+Else If color = rojo 
+    Output "Debe detenerse"
+Else
+    Output "Color no es valido"
+End If
+
+STOP
+
+12)
+START
+
+Declarations
+    edad : num
+
+Output "Introduzca su edad: "
+Input edad
+
+If edad >= 18 
+    Output "Puedes votar"
+Else
+    Output "No puede votar"
+End If
+
+STOP
+
+13)
+START
+
+Declarations
+    nota : num
+
+Output "Inserte su nota: "
+Input nota
+
+If nota = 0 OR nota <= 100 
+    Output "Su nota es valida"
+Else
+    Output "Nota no es valida"
+End If
+
+STOP
+
+14)
+START
+
+Declarations
+    total : num
+
+Output "Inserte el total de ventas: "
+Input total
+
+If total >= 5000 
+    Output "Recibiras una comisión¡Bien hecho!"
+Else
+    Output "No recibiras comisión"
+End If
+
+STOP
+
+15)
+START
+
+Declarations
+    year : num
+
+Output "Inserte el año: "
+Input year
+
+If year MOD 4 = 0 
+    Output "El año " + year + " es bisiesto"
+Else
+    Output "El año " + year + " no es bisiesto"
+End If
+
+STOP
+
+16)
+START
+
+Declarations
+    edad : num
+
+Output "Ingrese su edad: "
+Input edad
+
+If edad <= 12 
+    Output "Niño"
+Else If edad <= 17 OR edad = 13 
+    Output "Adolescente"
+Else If edad <= 59 OR edad = 18 
+    Output "Adulto"
+Else
+    Output "Adulto Mayor"
+End If
+
+STOP
+
+17)
+START
+
+Declarations
+    peso : num
+    altura : num
+    imc : num
+
+Output "Inserte su peso: "
+Input peso
+
+Output "Inserte su altura: "
+Input altura
+
+imc = peso / (altura ^ 2)
+
+If imc < 18.5 
+    Output "Bajo Peso"
+Else If imc <= 24.9 OR imc = 18.5 
+    Output "Normal"
+Else If imc <= 29.9 OR imc = 25 
+    Output "Sobrepeso"
+Else
+    Output "Obesidad"
+End If
+
+STOP
+
+18)
+START
+
+Declarations
+    balanceDisponible : num
+    retiro : num
+    balanceNuevo : num
+
+Output "Inserte el balance total en su cuenta: "
+Input balanceDisponible
+
+Output "Su balance disponible es $" + balanceDisponible + ". Inserte la cantidad que desea retirar: "
+Input retiro
+
+balanceNuevo = balanceDisponible - retiro
+
+If retiro <= balanceDisponible 
+    Output "Retiro de $" + retiro + " permitido."
+    Output "Su nuevo balance es: $" + balanceNuevo
+Else
+    Output "El retiro no es posible, fondos insuficientes."
+End If
+
+STOP
+
+19)
+START
+
+Declarations
+    creditos : num
+
+Output "Inserte la cantidad de creditos aprobados: "
+Input creditos
+
+If creditos < 30 
+    Output "Primer Año"
+Else If creditos <= 59 OR creditos = 30 
+    Output "Segundo Año"
+Else If creditos <= 89 OR creditos = 60 
+    Output "Tercer Año"
+Else
+    Output "Cuarto Año"
+End If
+
+STOP
